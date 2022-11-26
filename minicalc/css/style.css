@@ -115,6 +115,11 @@ input:focus {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 479px){
+  .wrapper{
+    flex-direction: column;
+  }
+}
 
 .btn {
   display: grid;
@@ -122,8 +127,13 @@ input:focus {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   margin: 0px 10px 0px 10px;
+  width: 100px;
 }
-
+@media (max-width: 479px) {
+  .btn {
+    margin: 10px 0px 10px 0px;
+  }
+}
 button {
   width: 45px;
   height: 45px;
@@ -158,14 +168,28 @@ button:nth-child(4) {
   margin: 0px 0px 0px 10px;
   align-items: center;
 }
-
+@media (max-width: 479px) {
+  .end {
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+  }
+}
 .result {
   display: flex;
   align-items: center;
-  width: 700px;
+  max-width: 100px;
 }
 
 .result p {
   font-size: 30px;
   margin: 0px 0px 0px 20px;
+}
+@media (max-width: 479px) {
+  .result p {
+    margin: 0px 0px 0px 0px;
+  }
+  .result{
+    margin: 10px 0px 0px 0px;
+    justify-content: center;
+  }
 }
